@@ -1,0 +1,60 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.logo {
+  max-width: 55px;
+  background: white;
+  overflow: hidden;
+  background-size: 20%;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.menu {
+  @include gradient;
+
+  li {
+    padding: 0 0.7rem;
+
+    a {
+      color: $white !important;
+      text-transform: capitalize;
+      font-weight: 600;
+    }
+  }
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.navbar-toggler.collapsed .close-icon {
+  display: none;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  display: inline;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(2) {
+  top: 1px;
+}
+.navbar-toggle .icon-bar {
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+  top: 6px;
+  transform: rotate(45deg);
+}
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+  background-color: transparent;
+}
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+  top: -6px;
+  transform: rotate(-45deg);
+}

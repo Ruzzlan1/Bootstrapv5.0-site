@@ -1,0 +1,64 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.display-2 {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+
+    &--intro {
+        font-size: inline-block;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+        font-size: 3rem;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 6rem;
+        }
+    }
+
+    &--description {
+        font-size: 1rem;
+        display: block;
+        margin-top: 1rem;
+        text-transform: none;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1.5rem;
+            display: inline-block;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .heading-lg {
+        font-size: 2rem;
+    }
+}
+
+.display-3 {
+    font-family: 'Poppins', sans-serif;
+
+    &--title {
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        display: inline-block;
+        background: linear-gradient(to right, $primary, $secondary);
+        background-clip: text;
+        color: transparent;
+        text-align: center;
+        @include media-breakpoint-up(lg) {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.services-text {
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+        text-align: start;
+    }
+}

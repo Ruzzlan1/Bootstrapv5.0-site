@@ -1,0 +1,18 @@
+@use 'custom' as *;
+
+// IMPORT ALL FILES
+
+@use 'components/animations';
+@use 'components/typography';
+@use 'components/buttons';
+@use 'components/mixins';
+@use 'components/seperator';
+@use 'components/gallery';
+
+@use 'layout/sections';
+@use 'layout/navbar';
+@use 'layout/testimonals';
+@use 'layout/footer';
+@use 'layout/header';
+@use 'layout/companies';
+@use 'layout/form';

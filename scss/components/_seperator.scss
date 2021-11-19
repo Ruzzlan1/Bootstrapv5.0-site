@@ -1,0 +1,31 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.heading-line::before {
+    content: '';
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $primary;
+}
+
+.heading-line::after {
+    content: '';
+    width: 2rem;
+    height: 0.2rem;
+    padding-top: 0.5rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-color: $secondary;
+}
+
+.border-right {
+    border-right: 0.1rem solid $gray-300;
+    height: 100%;
+}
+.seperator {
+    width: 60px;
+    height: 2px;
+}

@@ -1,0 +1,45 @@
+// #########################################################
+//            COPY BOOTSTRAP VARIABLES YOU NEED TO OVERIDE INTO THIS FILE
+//              WE HAVE AFEW OVERIDES ALREADY
+// #########################################################
+
+// COPY VARIABLES YOU WANT TO OVRIDE HERE
+
+// MY THEME COLORS
+$purple-dark: #5f4b8bff;
+$purple-light: #cdb599ff;
+$pink: #cf8794;
+$footer: #151414;
+
+// WHITE AND GRAY COLORS
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$primary: $purple-dark;
+$secondary: $pink;
+
+// ACCORDION OVERRIDES
+$accordion-icon-color: $primary;
+$accordion-icon-active-color: $secondary;
+
+$accordion-padding-y: 1.5rem;
+$accordion-padding-x: 1.5rem;
+
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z'/></svg>");
+
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z'/></svg>");
+
+$accordion-transition: none;
+$accordion-icon-width: 1.35rem;
+
+// IMPORT BOOTSTRAP
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
