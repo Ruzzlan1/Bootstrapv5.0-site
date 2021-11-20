@@ -4,4 +4,4 @@ A starter project for making Bootstrap 5 website
 
 
 Live on: 
-ruzzlan-portfolio.vercel.app
+https://ruzzlan-portfolio.vercel.app/
