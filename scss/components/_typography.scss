@@ -47,6 +47,7 @@
         display: inline-block;
         background: linear-gradient(to right, $primary, $secondary);
         background-clip: text;
+        --webkit-background-clip: text;
         color: transparent;
         text-align: center;
         @include media-breakpoint-up(lg) {

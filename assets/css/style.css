@@ -11163,6 +11163,7 @@ textarea.form-control-lg {
   display: inline-block;
   background: linear-gradient(to right, #5f4b8bff, #cf8794);
   background-clip: text;
+  --webkit-background-clip: text;
   color: transparent;
   text-align: center;
 }
